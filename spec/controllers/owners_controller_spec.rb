@@ -13,8 +13,8 @@ describe "Owners Controller" do
       expect(page).to have_field('owner[name]')
     end
 
-    it "'/owners/new' form has a checkbox for existing pets" do
-      @pet1 = Pet.create(:name => "Bessie")
+    #it "'/owners/new' form has a checkbox for existing pets" do
+    #  @pet1 = Pet.create(:name => "Bessie")
       @pet2 = Pet.create(:name => "Sadie")
       visit '/owners/new'
       expect(page.has_unchecked_field?(@pet1.id)).to eq(true)
