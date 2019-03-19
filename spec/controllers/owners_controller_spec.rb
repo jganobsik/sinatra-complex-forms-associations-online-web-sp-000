@@ -62,7 +62,7 @@ describe "Owners Controller" do
    #   @owner = Owner.last
    #   expect(page.current_path).to eq("/owners/#{@owner.id}")
   #  end
- # end
+  end
 
   describe "edit action" do 
     before(:each) do
