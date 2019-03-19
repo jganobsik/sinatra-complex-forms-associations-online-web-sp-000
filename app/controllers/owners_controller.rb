@@ -29,8 +29,7 @@ end
     erb :'/owners/show'
   end
 
-  patch '/owners/:id' do 
-   
+ patch '/owners/:id' do
     ####### bug fix
     if !params[:owner].keys.include?("pet_ids")
     params[:owner]["pet_ids"] = []
